@@ -1,9 +1,9 @@
-a=input().split()
-a = [int(num) for num in a]
-count=0
+x1=int(input())
+y1=int(input())
+x2=int(input())
+y2=int(input())
 
-for i in range(len(a)):
-    if i==0 or a[i]!=a[i-1]:
-        count+=1
-
-print(count)
+if abs(x1 - x2) <= 1 and abs(y1 - y2) <= 1:
+    print("YES")
+else:
+    print("NO")

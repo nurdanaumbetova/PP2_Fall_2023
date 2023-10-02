@@ -1,10 +1,9 @@
-a = input().split()
-x=int(input())
+x1=int(input())
+y1=int(input())
+x2=int(input())
+y2=int(input())
 
-for i in range(x, len(a)-1):
-    a[i]=int(a[i])
-    a[i]=a[i+1]
-a.pop()
-
-for i in range(len(a)):
-    print(a[i])
+if (abs(x1 - x2) == 1 and abs(y1 - y2) == 2) or (abs(x1 - x2) == 2 and abs(y1 - y2) == 1):
+    print("YES")
+else:
+    print("NO")

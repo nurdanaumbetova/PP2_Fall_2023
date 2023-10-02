@@ -1,3 +1,6 @@
-a = input().split()
-for i in range (0,len(a),2):
-    print(a[i])
+a=int(input())
+b=int(input())
+if a<b:
+    print(a)
+else:
+    print(b)

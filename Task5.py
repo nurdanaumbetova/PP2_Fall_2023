@@ -1,7 +1,12 @@
-a = [int(s) for s in input().split()]
-petya = int(input())
-x = 1
-for i in range(len(a)):
-    if a[i] >= petya:
-        x += 1
-print(x)
+a=int(input())
+b=int(input())
+c=int(input())
+
+if a<=b and a<=c:
+    min=a
+elif b<=a and b<=c:
+    min=b
+else:
+    min=c
+
+print(min)

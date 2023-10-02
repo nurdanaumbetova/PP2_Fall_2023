@@ -1,5 +1,8 @@
-a=input().split()
-
-for i in range(1,len(a)):
-    if(a[i]>a[i-1]):
-        print(a[i], end=' ')
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+if (x1 + y1) % 2 == (x2 + y2) % 2:
+    print("YES")
+else:
+    print("NO")
