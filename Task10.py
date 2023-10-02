@@ -1,9 +1,8 @@
-x1=int(input())
-y1=int(input())
-x2=int(input())
-y2=int(input())
+a = input().split()
 
-if x1 == x2 or y1 == y2 or abs(x1 - x2) == abs(y1 - y2):
-    print("YES")
-else:
-    print("NO")
+a = list(map(int, a))  
+min_i = a.index(min(a))
+max_i = a.index(max(a))
+a[min_i], a[max_i] = a[max_i], a[min_i]
+
+print(*a)

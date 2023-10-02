@@ -1,16 +1,8 @@
-a = int(input())
-b = int(input())
-c = int(input())
-d = int(input())
+num = input().split()
+count_p = 0
+for i in range(len(num)):
+    for j in range(i + 1, len(num)):
+        if num[i] == num[j]:
+            count_p += 1
 
-if a > b:
-    a, b = b, a
-if c >= a / 2:
-    c = a - c
-if d >= b / 2:
-    d = b - d
-
-if c < d:
-    print(c)
-else:
-    print(d)
+print(count_p)
